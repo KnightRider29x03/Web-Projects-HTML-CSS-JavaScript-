@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="logjs.js"></script>
+    </head>
+    <body> 
+        <header>
+            <a href="index.html" class="logo">GAMERS</a>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="index.html">Games</a></li>
+                <li><a href="index.html">Tournaments</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+            </ul>
+            <div class="action">
+                <div class="searchBx">
+                    <a href="#"><i class='bx bx-search'></i></a>
+                    <input type="text" placeholder="Search Games">
+                </div>
+            </div>
+            <div class="toggleMenu" onclick="toggleMenu();"></div>
+        </header>
+        <div class="container">
+                <form action="" name="login form" onsubmit="return(validate());">
+                <div class="formdesign" id="name">
+                    Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+                </div>
+                <div class="formdesign" id="email">
+                    Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+                </div>
+                <div class="formdesign" id="phone">
+                    Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+                </div>
+                <div class="formdesign" id="pass">
+                    Password: <input type="password" name="fpass" required><b><span class="formerror"></span></b>
+                </div>
+                <div class="formdesign" id="cpass">
+                    Confirm Password: <input type="password" name="fcpass" required><b><span class="formerror"></span></b>
+                </div><br>
+                <div class="choose"> <P CLASS="PA">SELECT YOUR COUNTRY :</P>
+                <select name = "COUNTRY" required>
+                    <option value = "-1" selected>[select]</option>
+                    <option value = "1">INDIA</option>
+                    <option value = "2">USA</option>
+                    <option value = "3">AUSTRALIA</option>
+                    <option value = "4">CANADA</option>
+                    <option value = "5">UK</option>
+                </select><br><br>
+                </div>
+                <BUTTON input class="but" type="submit" value="Submit">submit</BUTTON>
+        </body>
+</html>
